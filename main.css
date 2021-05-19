@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url(images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddbff;
+}
+
+.container {
+  width: 85%;
+}
+
+.files,
+.storage {
+  background: #1d2c67;
+  margin: 0;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.files {
+  border-top-right-radius: 100px;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.logo {
+  margin-bottom: 2.5rem;
+}
+
+.files-options {
+  display: flex;
+}
+
+.files-option {
+  background: #0c122c;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.storage {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.storage-bar-back {
+  height: 1.5rem;
+  padding: 0.2rem;
+  background: #0f1b3d;
+  border-radius: 100px;
+}
+
+.storage-bar-front {
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  width: 75%;
+}
+
+.bar-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storage-left {
+  position: absolute;
+  align-self: center;
+  bottom: -40px;
+  font-size: 3rem;
+  padding: 0.6rem 1.8rem;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.storage-left span {
+  color: #848794;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-left: 0.7rem;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: #0c122c;
+    background-image: url(images/bg-desktop.png);
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .files {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .storage {
+    width: 300%;
+    align-self: flex-end;
+  }
+
+  .storage-left {
+    bottom: 120px;
+    right: 2rem;
+  }
+  .storage-left::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-top: 20px solid transparent;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
